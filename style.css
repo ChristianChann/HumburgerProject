@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(18, 19, 19);
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.container{
+    margin-top: 50px;
+
+}
+
+.hamburgerContainer{
+    margin-top: 50px;
+    margin-right: 100px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    z-index: 1;
+    
+}
+
+.hamburger{
+    width: 25px;
+    height: 4px;
+    background-color: #cdedf6;
+    padding: 2px 0px;
+    border-radius: 2px;
+    margin: 4px 0;
+}
+
+.line2, .line1, .line3, .showOverLayMenu{
+    transition: all 0.5s ease;
+}
+.hideLine2{
+    opacity: 0;
+}
+
+.degreeLine1{
+    transform: rotate(45deg) translate(3px, 9px);
+}
+
+.degreeLine3{
+    transform: rotate(-45deg) translate(3px, -9px);
+}
+
+li{
+    font-size: 20px;
+    list-style: none;
+    cursor: pointer;
+    user-select: none;
+    padding: 4px 4px;
+    color: rgb(86, 143, 189);
+    transition: tramsform 0.5s ease;
+}
+
+li:hover{
+    opacity: 0.8;
+}
+
+.colorChange{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(156, 33, 33);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    
+}
+
+.showOverLayMenu{
+    opacity: 1;
+}
+
+
+.test {
+    transform: translateY(400px);
+    transition: all ease-in-out;
+}
+
+.liMoveTag{
+    transform: translateY(0px);
+}
